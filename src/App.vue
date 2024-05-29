@@ -1,20 +1,21 @@
 <template>
   <main>
     <sd-header />
-    <sd-assets-table />
+    <!-- <sd-assets-table /> -->
+    <router-view class="container px-5 sm: px-20 flex justify-center" />
   </main>
 </template>
 
 <script>
 import SdHeader from "@/components/SdHeader.vue"
 
-import SdAssetsTable from './components/SdAssetsTable.vue'
+//import SdAssetsTable from './components/SdAssetsTable.vue' la sd-assets-table se traslado a view/Home.vue
 
 export default {
   name: 'App',
   components: {
     SdHeader,
-    SdAssetsTable
+    //SdAssetsTable
   }
 }
 </script>
