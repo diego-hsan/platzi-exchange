@@ -1,17 +1,20 @@
 <template>
   <main>
-   
-    
-</main>
+    <sd-header />
+    <sd-assets-table />
+  </main>
 </template>
 
 <script>
+import SdHeader from "@/components/SdHeader.vue"
 
+import SdAssetsTable from './components/SdAssetsTable.vue'
 
 export default {
   name: 'App',
   components: {
-    
+    SdHeader,
+    SdAssetsTable
   }
 }
 </script>
@@ -23,6 +26,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  
 }
 </style>
