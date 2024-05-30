@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory} from 'vue-router'
-import Vue from 'vue'
-import Home from '@/views/Home'
+import {createApp} from 'vue'
+import Home from '@/views/Home.vue';
 
 
 const router = createRouter ({
-    history: createWebHistory(),
+    history: createWebHistory(process.env.BASE_URL),
 
     routes: [
         {
@@ -13,4 +13,6 @@ const router = createRouter ({
             component: Home
         }
     ]
-})
+});
+
+export default router;
