@@ -8,11 +8,9 @@
 <script>
 import SdAssetsTable from '@/components/SdAssetsTable.vue'
 
-import SdAssetsTable from './components/SdAssetsTable.vue'
-
 export default {
      name:'Home',
 
-     components: { SdAssetsTableSdAssetsTable}
-}
+     components: { SdAssetsTable}
+};
 </script>
